@@ -12,7 +12,7 @@ with col1:
     st.write("📍 **Adresse :** Rue Claessens 107, Boite 13, 1020 Laeken")
     st.write("✉️ **Email :** NAWFALZDS@GMAIL.COM")
 with col2:
-    st.write("🌐 **Site web :** NawfalDouass.com")
+    st.write("🌐 **Site web :** https://portfolio-nawfal.streamlit.app")
 
 st.divider()
 
