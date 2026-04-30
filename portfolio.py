@@ -17,7 +17,7 @@ st.markdown("""
     <div class="badge-row">
         <span class="badge">📍 Laeken, Bruxelles</span>
         <span class="badge">✉️ NAWFALZDS@GMAIL.COM</span>
-        <span class="badge">🌐 vraimentmonsite.com</span>
+        <span class="badge">🌐 portfolio-nawfal.streamlit.app</span>
     </div>
     <p style="color:#555; font-size:0.95rem; max-width:600px; line-height:1.7;">
         Motivé, rigoureux et habitué au travail d'équipe — je recherche une opportunité pour 
