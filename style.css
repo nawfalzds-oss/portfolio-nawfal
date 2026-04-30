@@ -1,0 +1,175 @@
+/* --- CONFIGURATION GLOBALE --- */
+.main .block-container { 
+    padding-top: 1rem; 
+    max-width: 860px; 
+}
+
+/* --- ANIMATIONS CSS PURES --- */
+@keyframes slideUpFade {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fillBar {
+    from { width: 0; }
+    to { width: var(--target-width); }
+}
+
+/* Classes d'animation avec différents délais pour l'effet cascade */
+.fade-section { 
+    opacity: 0; 
+    animation: slideUpFade 0.8s ease-out forwards; 
+}
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.3s; }
+.delay-3 { animation-delay: 0.5s; }
+.delay-4 { animation-delay: 0.7s; }
+.delay-5 { animation-delay: 0.9s; }
+
+/* --- HERO SECTION --- */
+.hero-name { 
+    font-size: 2.8rem; 
+    font-weight: 700; 
+    letter-spacing: -0.02em; 
+    margin-bottom: 0.2rem; 
+}
+.hero-subtitle, .timeline-org, .timeline-desc, .lang-level { 
+    opacity: 0.8; 
+}
+
+.badge-row { 
+    display: flex; 
+    gap: 8px; 
+    flex-wrap: wrap; 
+    margin-bottom: 1rem; 
+}
+
+/* Badges adaptatifs (clair/sombre) */
+.badge { 
+    background: rgba(51, 102, 204, 0.15); 
+    color: #4f8ef7; 
+    border-radius: 20px; 
+    padding: 4px 14px; 
+    font-size: 0.8rem; 
+    font-weight: 600; 
+}
+
+/* --- TIMELINE (Formation & Expérience) --- */
+.timeline { 
+    position: relative; 
+    padding-left: 24px; 
+}
+.timeline::before { 
+    content: ''; 
+    position: absolute; 
+    left: 7px; 
+    top: 6px; 
+    bottom: 0; 
+    width: 1px; 
+    background: rgba(150, 150, 150, 0.3); 
+}
+.timeline-item { 
+    position: relative; 
+    margin-bottom: 1.4rem; 
+}
+.timeline-item::before {
+    content: ''; 
+    position: absolute; 
+    left: -20px; 
+    top: 6px;
+    width: 10px; 
+    height: 10px; 
+    border-radius: 50%;
+    background: #4f8ef7; 
+    border: 2px solid transparent; 
+    box-shadow: 0 0 0 2px #4f8ef7;
+}
+.timeline-item.past::before { 
+    background: rgba(150, 150, 150, 0.5); 
+    box-shadow: 0 0 0 2px rgba(150, 150, 150, 0.5); 
+}
+.timeline-title { 
+    font-weight: 600; 
+    font-size: 1rem; 
+    margin-bottom: 2px; 
+}
+.timeline-date { 
+    opacity: 0.6; 
+    font-size: 0.8rem; 
+    margin-top: 2px; 
+}
+
+/* --- TITRES DE SECTIONS --- */
+.section-label { 
+    font-size: 0.72rem; 
+    font-weight: 600; 
+    letter-spacing: 0.1em; 
+    text-transform: uppercase; 
+    opacity: 0.6; 
+    margin-bottom: 14px; 
+    padding-bottom: 6px; 
+    border-bottom: 1px solid rgba(150, 150, 150, 0.2); 
+}
+
+/* --- BARRES DE COMPÉTENCES --- */
+.skill-row { 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+    margin-bottom: 10px; 
+}
+.skill-name { 
+    min-width: 110px; 
+    font-size: 0.88rem; 
+    font-weight: 500; 
+}
+.skill-bar-bg { 
+    flex: 1; 
+    height: 5px; 
+    background: rgba(150, 150, 150, 0.2); 
+    border-radius: 3px; 
+    overflow: hidden; 
+}
+.skill-bar {
+    height: 100%; 
+    border-radius: 3px;
+    background: linear-gradient(90deg, #4f8ef7, #a78bfa);
+    width: 0; 
+    animation: fillBar 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: 1.2s; 
+}
+
+/* --- LANGUES ET DISPONIBILITÉS --- */
+.lang-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
+}
+
+.lang-card { 
+    background: rgba(150, 150, 150, 0.08); 
+    border-radius: 10px; 
+    padding: 12px 16px; 
+    border: 1px solid rgba(150, 150, 150, 0.15); 
+}
+.lang-name { 
+    font-weight: 600; 
+    font-size: 0.9rem; 
+}
+
+.dispo-grid { 
+    display: flex; 
+    gap: 8px; 
+    flex-wrap: wrap; 
+}
+
+.dispo-pill { 
+    background: rgba(22, 163, 74, 0.15); 
+    color: #22c55e; 
+    border: 1px solid rgba(34, 197, 94, 0.3); 
+    border-radius: 20px; 
+    padding: 5px 14px; 
+    font-size: 0.82rem; 
+    font-weight: 600; 
+}
