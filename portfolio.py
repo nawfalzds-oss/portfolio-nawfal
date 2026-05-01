@@ -89,6 +89,35 @@ st.markdown("""
 
 st.divider()
 
+# ── BÉNÉVOLAT ─────────────────────────────────────────────────────────────────
+st.markdown("""
+<div class="fade-section delay-4">
+    <div class="section-label">🤝 Engagements & Bénévolat</div>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-title">Responsable associatif</div>
+            <div class="timeline-org">symfuny'Art</div>
+            <div class="timeline-date">2018 — actuellement</div>
+            <div class="timeline-desc">Gestion des activités, prise d'initiatives, sens des responsabilités et coordination.</div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-title">Bénévole — Pôle soutien scolaire</div>
+            <div class="timeline-org">Solidarité réussite</div>
+            <div class="timeline-date">2023 — actuellement</div>
+            <div class="timeline-desc">Accompagnement pédagogique des élèves, transmission de connaissances et écoute active.</div>
+        </div>
+        <div class="timeline-item past">
+            <div class="timeline-title">Membre du comité des jeunes</div>
+            <div class="timeline-org">1001 schakels</div>
+            <div class="timeline-date">2019 — 2025</div>
+            <div class="timeline-desc">Participation aux décisions stratégiques, co-création de projets pour la jeunesse et travail en équipe.</div>
+        </div>
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
+st.divider()
+
 # ── COMPÉTENCES ───────────────────────────────────────────────────────────────
 st.markdown("""
 <div class="fade-section delay-4">
