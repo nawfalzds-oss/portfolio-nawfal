@@ -75,6 +75,11 @@ st.markdown("""
             <div class="timeline-date">Oct. 2025 — actuellement</div>
         </div>
         <div class="timeline-item past">
+            <div class="timeline-title">Balayeur de rue — Ville de Bruxelles</div>
+            <div class="timeline-org">Maintient de la propreté de la voie public · Cohésion et travail d'équipe</div>
+            <div class="timeline-date">Août 2025</div>
+        </div>
+        <div class="timeline-item past">
             <div class="timeline-title">Magasinier — Proximus</div>
             <div class="timeline-org">Gestion des stocks et approvisionnements · Coordination inter-équipes</div>
             <div class="timeline-date">Août 2024</div>
